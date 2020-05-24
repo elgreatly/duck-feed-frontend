@@ -9,7 +9,7 @@
         <div class="col-sm-12 col-md-4">
             <div class="form-group">
                 <label for="fed-time">Fed Time</label>
-                <ngb-timepicker [(ngModel)]="fed_time" formControlName="fed_time" [spinners]="false"></ngb-timepicker>
+                <ngb-timepicker formControlName="fed_time" [spinners]="false"></ngb-timepicker>
                 <div class="error-messages-container" *ngIf="(duckFeedFormControl.fed_time.touched || submitted) && duckFeedFormControl.fed_time.errors?.required">
                     <span class="invalid-feedback">Required</span>
                 </div>
