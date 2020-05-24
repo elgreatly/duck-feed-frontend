@@ -58,10 +58,15 @@
         <div class="col-sm-12 col-md-4">
             <div class="form-group">
                 <label for="food-weight">Food Weight</label>
-                <input type="text" formControlName="food_weight" id="food-weight" placeholder="Food Weight" class="form-control"
-                [class.invalid]="(duckFeedFormControl.food_weight.touched || submitted) && duckFeedFormControl.food_weight.errors?.required" />
-                <div class="error-messages-container" *ngIf="(duckFeedFormControl.food_weight.touched || submitted) && duckFeedFormControl.food_weight.errors?.required">
-                    <span class="invalid-feedback">Required</span>
+                <div class="row">
+                    <div class="col-sm-10">
+                        <input type="number" formControlName="food_weight" id="food-weight" placeholder="Food Weight" class="form-control"
+                        [class.invalid]="(duckFeedFormControl.food_weight.touched || submitted) && duckFeedFormControl.food_weight.errors?.required" />
+                        <div class="error-messages-container" *ngIf="(duckFeedFormControl.food_weight.touched || submitted) && duckFeedFormControl.food_weight.errors?.required">
+                            <span class="invalid-feedback">Required</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">kg</div>
                 </div>
             </div>
         </div>
