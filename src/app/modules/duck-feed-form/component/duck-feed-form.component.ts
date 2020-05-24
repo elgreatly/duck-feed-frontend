@@ -38,7 +38,6 @@ export class DuckFeedFormComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-    console.log(this.duckFeedForm.value);
     if (this.duckFeedForm.valid) {
       this.loading = true;
       const duckFeedRequest: DuckFeedRequestModel = {
